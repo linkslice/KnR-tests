@@ -11,8 +11,14 @@ main()
 
 	fahr = lower;
 	while (fahr <= upper) {
-		celcius = 5 * (fahr-32) /9;
-		printf("%d\t%d\n", fahr, celcius);
-		fahr = fahr + step;
+		if (fahr % step == 0 || fahr - 32 == 0){	
+			celcius = 5 * (fahr-32) /9;
+			if (fahr == 32) { 
+				printf("%d\t%d\t<freezing>\n", fahr, celcius);
+			}else{
+				printf("%d\t%d\n", fahr, celcius);
+			}
+		}
+		fahr = fahr + 1;
 	}
 }
