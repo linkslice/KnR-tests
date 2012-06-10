@@ -10,8 +10,9 @@ main()
 	int blanks, tabs, newlines = 0;
 
 	while ((c = getchar()) != EOF ) {
+		if (c == ' ') ++blanks;
 		if (c == '\t') ++tabs;
 		if (c == '\n') ++newlines;
 	}
-	printf("tabs: %d\nnewlines: %d\n", tabs, newlines);
+	printf("blanks: %d\ntabs: %d\nnewlines: %d\n", blanks, tabs, newlines);
 }
