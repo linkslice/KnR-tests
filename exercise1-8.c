@@ -7,7 +7,8 @@
 main()
 {
 	int c;
-	int blanks, tabs, newlines = 0;
+	int blanks, tabs, newlines;
+	blanks = tabs = newlines = 0;
 
 	while ((c = getchar()) != EOF ) {
 		if (c == ' ') ++blanks;
