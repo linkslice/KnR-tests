@@ -2,7 +2,7 @@
 
 /* messing about with funtion prototypes
  * parameter names are optional for prototypes
- * this woule better be written 
+ * this would better be written 
  * int power(int m, int n); */
 int power(int , int );
 
