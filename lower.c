@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int lower(int);
+
 int main()
 {
 
