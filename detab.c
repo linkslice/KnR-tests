@@ -8,10 +8,12 @@ int main()
 
 
 	while ((c = getchar()) != EOF)
-		if (c == '\t')  
-			putchar(tab);
-		else
+		if (c == '\t') { 
+			putchar(tab); 
+			putchar(tab); /* yeah yeah I know */
+		} else {
 			putchar(c);
+		}
 
 	return 0;
 
