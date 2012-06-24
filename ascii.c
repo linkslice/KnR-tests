@@ -14,6 +14,7 @@ int main()
 	int stop = 'Z';
 	int letter;
 	int lower;
+	int cr = 1;
 
 	letter = start;
 	while (letter <= stop) {
@@ -22,10 +23,14 @@ int main()
 
 		lower = letter + 'a' - 'A';
 		putchar(lower);
-		printf(" = %d\n", lower);
+		printf(" = %d\t", lower);
+		
+		if (cr++ % 4 == 0) printf("\n");
 
 		letter++;
 	}
+
+	printf("\n");
 
 	return 0;
 
