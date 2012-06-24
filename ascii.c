@@ -16,6 +16,7 @@ int main()
 	int lower;
 	int cr = 1;
 
+	int nums = 48;
 
 	while (letter <= stop) {
 		putchar(letter);
@@ -26,7 +27,10 @@ int main()
 		putchar(lower);
 		printf(" = %d\t", lower);
 		
-		if (cr++ % 2 == 0) printf("\n");
+		if (cr++ % 2 == 0) {
+			putchar(nums);
+			printf(" = %d\n", nums++);
+		}
 
 	}
 
