@@ -17,8 +17,9 @@ int main()
 	
 	while ((c = getchar()) != EOF)
 		printf("%c", (c>='A' && c<='Z') 
-			? lower(c) : (c>='a' && c<='z') 
-			? upper(c) : putchar(c)); 
+			? lower(c) : (c>='a' && c<='z')
+			? upper(c) : c
+		);
 	
 	return 0;
 
