@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main()
+int main()
 {
 	int fahr, celcius;
 	int lower, upper, step;
@@ -21,4 +21,6 @@ main()
 		}
 		fahr = fahr + 1;
 	}
+	
+	return 0;
 }
